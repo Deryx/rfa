@@ -10,6 +10,24 @@ section {
 	width: 100%;
 }
 
+.marquee {
+	background-size: cover;
+	background-image: url(../images/marquee-4.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 500px;
+}
+
+.marquee > header {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 72px;
+	background: rgb(255, 255, 255);
+	background: rgba(255, 255, 255, 0.35);
+}
+
 h1 {
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
@@ -20,180 +38,7 @@ h1 {
 	margin-top: 0;
 }
 
-section > h2 {
-	text-align: center;
-	font-family: 'Open Sans', sans-serif;
-	text-transform: capitalize;
-	font-size: 200%;
-}
-
-#marquee {
-	background-size: cover;
-	background-image: url(../images/marquee-4.jpg);
-	background-repeat: no-repeat;
-	background-position: center
-	width: 100%;
-	height: 500px;
-}
-
-#marquee > header {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 72px;
-	background: rgba(255, 255, 255, 0.35);
-}
-
-#marquee > header > h1 {
-	margin: 0;
-	padding: 12px 0 0 40px;
-	font-size: 200%;
-	font-family: 'Roboto Slab', serif;
-	font-weight: 700;
-	float: left;
-	text-transform: capitalize;
-}
-
-#marquee > header > nav {
-	margin: 0 40px 0 0;
-	float: right;
-}
-
-#marquee > header > nav > ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-#marquee > header > nav > ul > li {
-	display: inline-table;
-	text-align: center;
-	width: 125px;
-	height: 72px;
-}
-
-#marquee > header > nav > ul > li > a {
-	text-decoration: none;
-	color: #000;
-	font-family: 'Open Sans', sans-serif;
-	text-transform: uppercase;
-	display: block;
-	padding: 24px 0 25px 0;
-}
-
-#marquee > header > nav > ul > li > a:hover {
-	background: #FFF;
-	font-weight: bold;
-}
-
-#marquee h1 {
-	color: rgba(0, 0, 0, 0.85);
-	margin: 0;
-	text-align: left;
-	padding: 340px 0 0 40px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 400%;
-	font-weight: 800;
-}
-
-#about, #programs, #article {
-	margin: 0 auto;
-	padding: 0;
-	clear: both;
-	width: 990px;
-}
-
-#about {
-	font-family: "Roboto Slab", serif;
-}
-
-#about h2::first-letter {
-	font-size: 250%;
-}
-
-#about > ul {
-	list-style-type: none;
-}
-
-#about > ul > li::first-letter {
-	font-size: 200%;
-	font-weight: bold;
-}
-
-#about > p > a {
-	color: #000;
-	font-weight: bold;
-	text-decoration: none;
-}
-
-#about > p > a:hover {
-	text-decoration: underline;
-}
-
-#programs {
-	display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#programs > header {
-	clear: both;
-}
-
-#programs > header > h1 {
-	clear: both;
-}
-
-#programs > article {
-	margin: 40px 10px;
-	padding: 0;
-	flex-direction: column;
-    justify-content: center;
-    align-items: center;
-	flex-grow: 1;
-	width: 25%;
-	border: 1px solid #CCC;
-	min-height: 350px;
-	background: rgba(189, 195, 199, 1.0);
-}
-
-#programs > article > div {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 125px;
-	clear: both;
-}
-
-#programs > article > .kf {
-	background-size: cover;
-	background-image: url(../images/kid-fitness-2.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-#programs > article > .af {
-	background-size: cover;
-	background-image: url(../images/adult-fitness-1.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-#programs > article > .sf {
-	background-size: cover;
-	background-image: url(../images/summer-fit.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-#programs > article > .sp {
-	background-size: cover;
-	background-image: url(../images/sports-per.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-#programs > article > h2 {
+h2 {
 	margin-top: 20px;
 	text-align: center;
 	font-weight: bold;
@@ -203,17 +48,115 @@ section > h2 {
 	padding: 0 12px;
 }
 
-#programs > article > p {
+.marquee > header > nav {
+	margin: 0 40px 0 0;
+	float: right;
+}
+
+.marquee > header > nav > ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.marquee > header > nav > ul > li {
+	display: inline-table;
+	text-align: center;
+	width: 125px;
+	height: 72px;
+}
+
+.marquee > header > nav > ul > li > a {
+	text-decoration: none;
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	display: block;
+	padding: 24px 0 25px 0;
+}
+
+.marquee > header > nav > ul > li > a:hover {
+	background: #FFF;
+	font-weight: bold;
+}
+
+section > div {
+	margin: 0 auto;
+	padding: 0;
+	clear: both;
+	width: 990px;
+}
+
+.programs > div {
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+	background: none;
+}
+
+.programs > header {
+	clear: both;
+}
+
+.programs > div > article {
+	margin: 40px 10px;
+	padding: 0;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	flex-grow: 1;
+	width: 25%;
+	min-height: 350px;
+	background: rgb(189, 195, 199);
+}
+
+.programs > div > article > div {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 125px;
+	clear: both;
+}
+
+.programs > div > article > .kf {
+	background-size: cover;
+	background-image: url(../images/kid-fitness-2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.programs > div > article > .af {
+	background-size: cover;
+	background-image: url(../images/adult-fitness-1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.programs > div > article > .sf {
+	background-size: cover;
+	background-image: url(../images/summer-fit.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.programs > div > article > .sp {
+	background-size: cover;
+	background-image: url(../images/sports-per.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.programs > div > article > p {
 	padding: 0 12px;
 	font-size: 95%;
 	font-family: 'Roboto Slab', serif;
 }
 
-#programs > article > p:last-child {
+.programs > div > article > p:last-child {
 	position: absolute;
 }
 
-#programs > article > p > a {
+.programs > div > article > p > a {
 	text-transform: uppercase;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
@@ -222,8 +165,35 @@ section > h2 {
 	color: #000;
 }
 
-#programs > article > p > a:hover {
+.programs > div > article > p > a:hover {
 	color: #0000FF;
+	text-decoration: underline;
+}
+
+.about > article {
+	margin: 0 auto;
+	padding: 0;
+	clear: both;
+	width: 990px;
+	font-family: "Roboto Slab", serif;
+}
+
+.about > article > ul {
+	list-style-type: none;
+}
+
+.about > article > ul > li::first-letter {
+	font-size: 200%;
+	font-weight: bold;
+}
+
+.about > article > p > a {
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.about > article > p > a:hover {
 	text-decoration: underline;
 }
 
@@ -233,4 +203,37 @@ footer {
 	width: 100%;
 	height: 144px;
 	clear: both;
+}
+
+
+.logo {
+	margin: 0;
+	padding: 12px 0 0 40px;
+	font-size: 200%;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
+	float: left;
+	text-transform: capitalize;
+}
+
+.tagline {
+	color: rgb(0, 0, 0);
+	margin: 0;
+	text-align: left;
+	padding: 340px 0 0 40px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 400%;
+	font-weight: 800;
+}
+
+.welcome {
+	text-align: left;
+	font-family: "Roboto Slab", sans-serif;
+	text-transform: none;
+	font-size: 200%;
+	margin-left: -15px;
+}
+
+.welcome::first-letter {
+	font-size: 200%;
 }

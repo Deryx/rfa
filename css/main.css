@@ -6,26 +6,7 @@ body {
 
 section {
 	margin: 0;
-	padding: 20px 0;
 	width: 100%;
-}
-
-.marquee {
-	background-size: cover;
-	background-image: url(../images/marquee-4.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	width: 100%;
-	height: 500px;
-}
-
-.marquee > header {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 72px;
-	background: rgb(255, 255, 255);
-	background: rgba(255, 255, 255, 0.35);
 }
 
 h1 {
@@ -48,25 +29,58 @@ h2 {
 	padding: 0 12px;
 }
 
-.marquee > header > nav {
+section:nth-of-type(even) {
+	background: rgb(240, 240, 240);
+}
+
+.marquee {
+	background-size: cover;
+	background-image: url(../images/marquee-4.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 500px;
+	position: relative
+}
+
+.marquee > .overlay {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 500px;
+	background: rgba(65, 131, 215, 0.6);
+	position: absolute;
+	z-index: 99;
+}
+
+.marquee > .overlay > header {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 72px;
+	background: rgb(255, 255, 255);
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.marquee > .overlay > header > nav {
 	margin: 0 40px 0 0;
 	float: right;
 }
 
-.marquee > header > nav > ul {
+.marquee > .overlay > header > nav > ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-.marquee > header > nav > ul > li {
+.marquee > .overlay > header > nav > ul > li {
 	display: inline-table;
 	text-align: center;
 	width: 125px;
 	height: 72px;
 }
 
-.marquee > header > nav > ul > li > a {
+.marquee > .overlay > header > nav > ul > li > a {
 	text-decoration: none;
 	color: #000;
 	font-family: 'Open Sans', sans-serif;
@@ -75,7 +89,7 @@ h2 {
 	padding: 24px 0 25px 0;
 }
 
-.marquee > header > nav > ul > li > a:hover {
+.marquee > .overlay > header > nav > ul > li > a:hover {
 	background: #FFF;
 	font-weight: bold;
 }
@@ -85,6 +99,11 @@ section > div {
 	padding: 0;
 	clear: both;
 	width: 990px;
+}
+
+.programs {
+	background: rgba(65, 131, 215, 0.6);
+	padding: 0 0 20px 0;
 }
 
 .programs > div {
@@ -172,7 +191,7 @@ section > div {
 
 .about > article {
 	margin: 0 auto;
-	padding: 0;
+	padding: 0 0 20px 0;
 	clear: both;
 	width: 990px;
 	font-family: "Roboto Slab", serif;
@@ -197,6 +216,10 @@ section > div {
 	text-decoration: underline;
 }
 
+.contact {
+	padding: 0 0 20px 0;
+}
+
 footer {
 	margin: 0;
 	padding: 0;
@@ -217,7 +240,7 @@ footer {
 }
 
 .tagline {
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 	margin: 0;
 	text-align: left;
 	padding: 340px 0 0 40px;

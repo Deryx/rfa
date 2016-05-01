@@ -1,8 +1,8 @@
 $(function() {
 	$( 'body' ).showlightbox();
-	$( '#an-lightbox' ).show();
+	$( '#an-lightbox' ).fadeIn();
 
 	$( 'body' ).on( 'click', function() {
-		$( '#site-overlay' ).closelightbox();
+		$( 'body' ).closelightbox();
 	});
 });

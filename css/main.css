@@ -126,23 +126,22 @@ section > div {
 	flex-grow: 1;
 	width: 25%;
 	min-height: 350px;
-	background: rgb(189, 195, 199);
 }
 
 .programs > div > article:nth-of-type(1) {
-	background: rgb(52, 152, 219);
+	background: rgb(41, 128, 185);
 }
 
 .programs > div > article:nth-of-type(2) {
-	background: rgb(230, 126, 34);
+	background: rgb(30, 130, 15)
 }
 
 .programs > div > article:nth-of-type(3) {
-	background: rgb(231, 76, 60);
+	background: rgb(207, 0, 15);
 }
 
 .programs > div > article:nth-of-type(4) {
-	background: rgb(26, 188, 156);
+	background: rgb(145, 61, 136);
 }
 
 .programs > div > article > div {
@@ -156,6 +155,7 @@ section > div {
 .programs > div > article > h2 {
 	background: #000;
 	color: rgba(240, 240, 240, 1);
+	margin-bottom: 0;
 }
 
 .programs > div > article > .kf {
@@ -287,7 +287,7 @@ dl > dd {
 
 label {
 	text-transform: uppercase;
-	font-size: 90%;
+	font-size: 80%;
 	font-weight: bold;
 	font-family: "Open Sans", sans-serif;
 }
@@ -311,6 +311,29 @@ footer {
 	clear: both;
 }
 
+#site-overlay {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    display: none;
+}
+
+[id^=lightbox] {
+    padding: 30px;
+    position: absolute;
+    float: left;
+    width: 300px;
+    height: 150px;
+    margin-left: -150px;
+    top: 40%;
+    left: 50%;
+    z-index: 100;
+    background: #FFF;
+}
 
 .logo {
 	margin: 0;

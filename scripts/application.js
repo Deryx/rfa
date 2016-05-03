@@ -1,8 +1,16 @@
 $(function() {
 	$( 'body' ).showlightbox();
 	$( '#an-lightbox' ).fadeIn();
+	
+	$( 'article p a' ).on( 'click', function() {
+        var $link = $( this );
+        var linkID = $link.attr( 'id' );
+		console.log(linkID);
+        $( 'body' ).showlightbox();
+		$( '#' + linkID + '-lightbox' ).fadeIn();
+	});
 
-	$( 'body' ).on( 'click', function() {
+	$( '#site-overlay > h1' ).on( 'click', function() {
 		$( 'body' ).closelightbox();
 	});
 });

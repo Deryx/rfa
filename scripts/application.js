@@ -1,6 +1,6 @@
 $(function() {
 	$( 'body' ).showlightbox();
-	$( '#an-lightbox' ).fadeIn();
+	$( '#sc-lightbox' ).fadeIn();
 	
 	$( 'article p a' ).on( 'click', function() {
         var $link = $( this );

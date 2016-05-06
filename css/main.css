@@ -378,6 +378,187 @@ footer {
 	display: none;
 }
 
+[id*=lightbox] > section {
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 680px;
+	height: 660px;
+	position: relative;
+}
+
+[id*=lightbox] > section > h1 {
+	text-transform: uppercase;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 200%;
+}
+
+[id*=lightbox] > section > p, div {
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: "Roboto Slab", serif;
+	text-align: justify;
+}
+
+[id*=lightbox] > section > header {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 200px;
+}
+
+[id*=kf-lightbox] > section {
+	border: 1px solid rgb(41, 128, 185);
+}
+
+[id*=kf-lightbox] > section > h1 {
+	background: rgb(41, 128, 185);
+	color: #FFF;
+}
+
+[id*=kf-lightbox] > section > header {
+	background-size: cover;
+	background-image: url(../images/kid-fitness.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+[id=kf-lightbox] > section > div {
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 75%;
+	display: flex;
+	flex-direction: row;
+}
+
+[id=kf-lightbox] > section > div > article {
+	flex-grow: 1;
+	text-align: center;
+}
+
+[id=kf-lightbox] > section > div > article > h3 {
+	margin-top: 0;
+	margin-bottom: -10px;
+	color: rgb(41, 128, 185);
+	text-transform: uppercase;
+	font-family: "Open Sans", sans-serif;
+}
+
+[id=sp-lightbox] > section > header {
+	background-size: cover;
+	background-image: url(../images/sports-performance.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+[id=sp-lightbox] > section {
+	border: 1px solid rgb(30, 130, 15);
+}
+
+[id=sp-lightbox] > section > h1 {
+	background: rgb(30, 130, 15);
+	color: #FFF;
+}
+
+[id=sp-lightbox] > section > article {
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 20px;
+	text-align: center;
+}
+
+[id=sp-lightbox] > section > article > h3 {
+	color: rgb(30, 130, 15);
+	font-family: "Open Sans", sans-serif;
+	text-transform: uppercase;
+}
+
+[id=sc-lightbox] > section > header {
+	background-size: cover;
+	background-image: url(../images/summer-camp.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+[id=sc-lightbox] > section {
+	border: 1px solid rgb(145, 61, 136);
+	overflow-y: scroll;
+}
+
+[id=sc-lightbox] > section > h1 {
+	background: rgb(145, 61, 136);
+	color: #FFF;
+}
+
+[id=sc-lightbox] > section > article {
+	width: 75%;
+	margin: 0 auto;
+	margin-top: 20px;
+	text-align: center;
+}
+
+[id=sc-lightbox] section > article > h2 {
+	margin-bottom: 0;
+	text-transform: uppercase;
+	color: rgb(145, 61, 136);
+	font-size: 300%;
+}
+
+[id=sc-lightbox] > article > h3 {
+	margin-top: 0;
+	margin-bottom: -10px;
+}
+
+[id=sp-lightbox] > section > article {
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 20px;
+	text-align: center;
+}
+
+[id=sp-lightbox] > article > h3 {
+	margin-top: 0;
+	margin-bottom: -10px;
+}
+
+[id=af-lightbox] > section {
+	overflow-y: scroll;
+}
+
+[id=af-lightbox] > section > header {
+	background-size: cover;
+	background-image: url(../images/adult-fitness.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+[id=af-lightbox] > section > article > p {
+	text-align: justify;
+}
+
+[id=af-lightbox] > section {
+	border: 1px solid rgb(207, 0, 15);
+}
+
+[id=af-lightbox] > section > h1 {
+	background: rgb(207, 0, 15);
+	color: #FFF;
+}
+
+[id=af-lightbox] > section > article {
+	width: 75%;
+	margin: 0 auto;
+	margin-top: 20px;
+	text-align: center;
+}
+
+[id=af-lightbox] > section > article > h3 {
+	margin-bottom: -10px;
+	color: rgb(207, 0, 15);
+	font-family: "Open Sans", sans-serif;
+	text-transform: uppercase;
+}
+
 .logo {
 	font-size: 200%;
 	font-family: 'Roboto Slab', serif;

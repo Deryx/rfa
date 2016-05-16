@@ -282,6 +282,7 @@ section > div {
 .contact {
 	padding: 0 0 20px 0;
 	background: none;
+	height: 500px;
 }
 
 .contact > header {
@@ -289,15 +290,37 @@ section > div {
 }
 
 .contact > div {
-	display: flex;
-    flex-direction: row;
-    align-items: center;
+	text-align: center;
+}
+
+.contact > div > address {
+	margin-bottom: 30px;
 }
 
 .contact > div > div {
-	flex-grow: 1;
-	flex-direction: column;
-    justify-content: center;
+	display: flex;
+	flex-direction: row;
+	height: 3em;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	width: 16em;
+}
+
+.contact > div > h2 {
+	text-transform: capitalize;
+	font-family: "Roboto Slab", serif;
+	font-size: 150%;
+}
+
+.contact > div > div > a > i {
+	font-size: 3em;
+	margin: 10px;
+}
+
+.contact > div > div > a > img {
+	position: absolute;
+	margin-top: 10px;
+	width: 3em;
 }
 
 .form {
